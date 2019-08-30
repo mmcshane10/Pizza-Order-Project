@@ -16,7 +16,12 @@ h1 {
   font-weight: bold;
   text-align: center;
   margin-left: 120px;
+  margin-bottom: 50px;
   font-size: 50px;
+}
+
+h2 {
+  margin-bottom: 20px;
 }
 
 h3 {
@@ -68,6 +73,7 @@ button {
   display: none;
   text-align: center;
   margin-left: 120px;
+  margin-top: 100px;
 }
 
 .result p {
@@ -77,4 +83,11 @@ button {
 
 #size-display, #meat-display, #toppings-display {
   font-weight: normal;
+}
+
+#page-reset {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+
 }

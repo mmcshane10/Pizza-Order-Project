@@ -96,4 +96,9 @@ $(document).ready(function() {
     $("#user-address")[0].reset();
 
   });
+
+  $("#page-reset").click(function(event) {
+    $(".order-entry").show();
+    $(".order-confirmation").hide();
+  });
 });
