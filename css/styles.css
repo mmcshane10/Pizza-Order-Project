@@ -1,0 +1,32 @@
+.sidenav {
+  height: 100%;
+  width: 120px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #e6e6e6;
+  overflow-x: hidden;
+  padding-top: 20px;
+  padding-left: 15px;
+}
+
+h1 {
+  font-family: 'Satisfy', cursive;
+  text-align: center;
+  margin-left: 120px;
+  font-size: 50px;
+}
+
+.container {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+#pizza_builder {
+  margin-left: 100px;
+}
+
+input {
+  margin-right: 10px;
+}
