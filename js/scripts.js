@@ -67,7 +67,7 @@ $(document).ready(function() {
     $("#size-display").text(newPizza.size)
     $("#meat-display").text(newPizza.meat)
     $("#toppings-display").text(newPizza.toppings)
-
+    $(".result").show()
     $("#pizza_builder")[0].reset();
 
     console.log(newPizza);
