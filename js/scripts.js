@@ -24,7 +24,7 @@ Pizza.prototype.priceCalculator = function() {
   }
 
   for (var i=0; i< this.meat.length; i++) {
-    if (this.meat[i] === "Bacon"){
+    if (this.meat[i] === " Bacon"){
       this.price += 3;
     } else {
       this.price += 2;
@@ -32,21 +32,21 @@ Pizza.prototype.priceCalculator = function() {
   };
 
   for (var i=0; i< this.toppings.length; i++) {
-    if (this.toppings[i] === "Extra Cheese"){
+    if (this.toppings[i] === " Extra Cheese"){
     this.price += 1;
     } else {
     this.price += 0.5;
     }
   };
 
-  return this.price;
+  return this.price
 };
 
 // USER LOGIC ---------------------------------------------
 
-// Form
+// Pizza Builder Form
 $(document).ready(function() {
-  $("form#pizza_builder").submit(function(event) {
+  $("form#pizza-builder").submit(function(event) {
     event.preventDefault();
     var sizeInput = $("input:radio[name=pizza-size]:checked").val();
 
@@ -64,12 +64,19 @@ $(document).ready(function() {
 
     newPizza.priceCalculator();
 
-    $("#size-display").text(newPizza.size)
-    $("#meat-display").text(newPizza.meat)
-    $("#toppings-display").text(newPizza.toppings)
-    $(".result").show()
-    $("#pizza_builder")[0].reset();
+    $("#size-display").text(newPizza.size);
+    $("#meat-display").text(newPizza.meat);
+    $("#toppings-display").text(newPizza.toppings);
+    $("#cost-display").text(newPizza.price.toFixed(2));
+    $(".result").show();
+    $("#pizza-builder")[0].reset();
 
     console.log(newPizza);
+  });
+
+// Continue to Delivery Button
+  $("#continue").click(function(event) {
+    event.preventDefault();
+    $(".address").show();
   });
 });
