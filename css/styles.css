@@ -19,13 +19,23 @@ h1 {
   font-size: 50px;
 }
 
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .container {
   margin-top: 30px;
   margin-bottom: 50px;
 }
 
-#pizza_builder {
+.card {
   margin-left: 80px;
+  margin-bottom: 30px;
+  width: 25rem
+}
+
+#pizza_builder {
   font-size: 14px;
 }
 
@@ -38,7 +48,11 @@ input {
   margin-right: 10px;
 }
 
-.result {
-  margin-left:80px;
-  margin-top: 80px;
+li {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#size-display, #meat-display, #toppings-display {
+  font-weight: normal;
 }

@@ -64,6 +64,10 @@ $(document).ready(function() {
 
     newPizza.priceCalculator();
 
+    $("#size-display").text(newPizza.size)
+    $("#meat-display").text(newPizza.meat)
+    $("#toppings-display").text(newPizza.toppings)
+
     $("#pizza_builder")[0].reset();
 
     console.log(newPizza);

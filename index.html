@@ -21,41 +21,52 @@
   <div class="container">
     <h1>Papa Mike's Pizza Warehouse</h1>
 
-    <form id="pizza_builder">
-      <div class="form-group">
-        <p class="form-header">Select a Size:</p>
-        <input type="radio" name="pizza-size" value="Small">Small ($12.00)<br>
-        <input type="radio" name="pizza-size" value="Medium">Medium ($15.00)<br>
-        <input type="radio" name="pizza-size" value="Large">Large ($18.00)<br>
-        <input type="radio" name="pizza-size" value="X-Large">X-Large ($20.00)<br>
+    <div class="card">
+      <div class="card-body">
+        <form id="pizza_builder">
+          <div class="form-group">
+            <p class="form-header">Select a Size:</p>
+            <input type="radio" name="pizza-size" value="Small">Small ($12.00)<br>
+            <input type="radio" name="pizza-size" value="Medium">Medium ($15.00)<br>
+            <input type="radio" name="pizza-size" value="Large">Large ($18.00)<br>
+            <input type="radio" name="pizza-size" value="X-Large">X-Large ($20.00)<br>
+          </div>
+          <div class="form-group">
+            <p class="form-header">Select Meats:</p>
+            <input type="checkbox" name="toppings-meat" value="Pepperoni">Pepperoni ($2.00)<br>
+            <input type="checkbox" name="toppings-meat" value=" Sausage">Sausage ($2.00)<br>
+            <input type="checkbox" name="toppings-meat" value=" BBQ Chicken">BBQ Chicken ($2.00)<br>
+            <input type="checkbox" name="toppings-meat" value=" Canadian Bacon">Canadian Bacon ($2.00)<br>
+            <input type="checkbox" name="toppings-meat" value=" Bacon">Bacon ($3.00)<br>
+          </div>
+          <div class="form-group">
+            <p class="form-header">Select Additional Toppings:</p>
+            <input type="checkbox" name="toppings-additional" value=" Onion">Onion ($0.50)<br>
+            <input type="checkbox" name="toppings-additional" value=" Garlic">Garlic ($0.50)<br>
+            <input type="checkbox" name="toppings-additional" value=" Black Olives">Black Olives ($0.50)<br>
+            <input type="checkbox" name="toppings-additional" value=" Basil">Basil ($0.50)<br>
+            <input type="checkbox" name="toppings-additional" value=" Peppers">Peppers ($0.50)<br>
+            <input type="checkbox" name="toppings-additional" value=" Mushrooms">Mushrooms ($0.50)<br>
+            <input type="checkbox" name="toppings-additional" value=" Extra Cheese">Extra Cheese ($1.00)<br>
+          </div>
+          <button type="submit">Review my Order</button>
+        </form>
       </div>
-      <div class="form-group">
-        <p class="form-header">Select Meats:</p>
-        <input type="checkbox" name="toppings-meat" value="Pepperoni">Pepperoni ($2.00)<br>
-        <input type="checkbox" name="toppings-meat" value="Sausage">Sausage ($2.00)<br>
-        <input type="checkbox" name="toppings-meat" value="BBQ Chicken">BBQ Chicken ($2.00)<br>
-        <input type="checkbox" name="toppings-meat" value="Canadian Bacon">Canadian Bacon ($2.00)<br>
-        <input type="checkbox" name="toppings-meat" value="Bacon">Bacon ($3.00)<br>
-      </div>
-      <div class="form-group">
-        <p class="form-header">Select Additional Toppings</p>
-        <input type="checkbox" name="toppings-additional" value="Onion">Onion ($0.50)<br>
-        <input type="checkbox" name="toppings-additional" value="Garlic">Garlic ($0.50)<br>
-        <input type="checkbox" name="toppings-additional" value="Black Olives">Black Olives ($0.50)<br>
-        <input type="checkbox" name="toppings-additional" value="Basil">Basil ($0.50)<br>
-        <input type="checkbox" name="toppings-additional" value="Peppers">Peppers ($0.50)<br>
-        <input type="checkbox" name="toppings-additional" value="Mushrooms">Mushrooms ($0.50)<br>
-        <input type="checkbox" name="toppings-additional" value="Extra Cheese">Extra Cheese ($1.00)<br>
-      </div>
-      <button type="submit">Review my Order</button>
-    </form>
+    </div>
 
-    <div class="result">
-      <p>Review My Order:</p>
-      
+    <div class="card">
+      <div class="card-body">
+        <div class="result">
+          <h3>Review My Order:</h3>
+          <ul>
+            <li>Size: <span id="size-display"></span></li>
+            <li>Meat: <span id="meat-display"></span></li>
+            <li>Toppings: <span id="toppings-display"></span></li>
+          </ul>
+        </div>
+      </div>
     </div>
 
   </div>
 </body>
-
 </html>
