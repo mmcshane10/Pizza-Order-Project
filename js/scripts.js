@@ -1,6 +1,6 @@
 // BUSINESS LOGIC -----------------------------------------
 
-//Empty Arrays for form selections
+//Empty variables for form selections
 var meatInput = [];
 var toppingsInput = [];
 
@@ -9,7 +9,8 @@ function Pizza(size, meat, toppings) {
   this.size = size,
   this.meat = meat,
   this.toppings = toppings,
-  this.price = 0
+  this.price = 0,
+  this.address = ""
 };
 
 Pizza.prototype.priceCalculator = function() {
@@ -78,5 +79,21 @@ $(document).ready(function() {
   $("#continue").click(function(event) {
     event.preventDefault();
     $(".address").show();
+  });
+
+// Place Order Button
+  $("form#user-address").submit(function(event) {
+    event.preventDefault();
+    var userAddress = $("input#user-address").val();
+    var userCity = $("input#user-city").val();
+    var userZip = $("input#user-zip").val();
+    // newPizza.address = userAddress + ", " + userCity + ", " + userZip
+    $(".order-entry").hide();
+    $(".result").hide();
+    $(".address").hide();
+    $("#address-display").text(userAddress);
+    $(".order-confirmation").show();
+    $("#user-address")[0].reset();
+
   });
 });

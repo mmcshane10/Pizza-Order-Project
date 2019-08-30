@@ -38,7 +38,7 @@ h3 {
   width: 30rem
 }
 
-#pizza_builder {
+#pizza-builder, #user-address {
   font-size: 14px;
 }
 
@@ -56,8 +56,18 @@ li {
   font-weight: bold;
 }
 
+button {
+  margin-top: 30px;
+}
+
 .result, .address {
   display: none;
+}
+
+.order-confirmation {
+  display: none;
+  text-align: center;
+  margin-left: 120px;
 }
 
 .result p {
